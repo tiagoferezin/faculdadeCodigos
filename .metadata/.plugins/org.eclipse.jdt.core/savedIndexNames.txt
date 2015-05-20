@@ -4,7 +4,6 @@ INDEX VERSION 1.127+C:\Users\Tiago\git\faculdadeCodigos\.metadata\.plugins\org.e
 1295507023.index
 3954291735.index
 2295009509.index
-1490850939.index
 4187470955.index
 3656756579.index
 1337478678.index
