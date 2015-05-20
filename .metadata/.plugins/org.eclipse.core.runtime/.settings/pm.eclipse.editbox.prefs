@@ -1,0 +1,16 @@
+ENABLED=true
+eclipse.preferences.version=1
+pm.eclipse.editbox.provider.java_Wock=\#COMMENT\r\n\#Wed May 20 00\:29\:30 BRT 2015\r\nHighlightOne\=false\r\nFillGradient\=false\r\nFillSelected\=false\r\nRoundBox\=false\r\nBorderColorType\=1\r\nName\=Wock\r\nExpandBox\=false\r\nBorderDrawLine\=false\r\nFillOnMove\=false\r\nAlpha\=0\r\nHighlightWidth\=1\r\nBorderWidth\=1\r\nHighlightColor\=e1e9ff\r\nBorderColor\=e1e9ff\r\nFillKeyModifier\=\r\nHighlightColorType\=1\r\nFillGradientColor\=ffffff\r\nBuilder\=Java\r\nHighlightDrawLine\=false\r\nFillSelectedColor\=ffffff\r\nBorderLineStyle\=1\r\nColors\=ffffff-f7fafc-eff5f9-e7f0f6-dfebf3-d7e6f0-cfe1ed-c7dcea-bfd7e7-b7d2e4-afcde1\r\nHighlightLineStyle\=1\r\nNoBackground\=false\r\nCirculateLevelColors\=false\r\n
+pm.eclipse.editbox.provider.java_default=Wock
+pm.eclipse.editbox.provider.java_enabled=true
+pm.eclipse.editbox.provider.markup_Default=\#COMMENT\r\n\#Wed May 20 00\:29\:30 BRT 2015\r\nHighlightOne\=false\r\nFillGradient\=true\r\nFillSelected\=true\r\nRoundBox\=false\r\nBorderColorType\=1\r\nName\=Default\r\nExpandBox\=false\r\nBorderDrawLine\=false\r\nFillOnMove\=false\r\nAlpha\=0\r\nHighlightWidth\=1\r\nBorderWidth\=1\r\nHighlightColor\=000000\r\nBorderColor\=808080\r\nFillKeyModifier\=null\r\nHighlightColorType\=3\r\nFillGradientColor\=dadcc2\r\nBuilder\=Markup\r\nHighlightDrawLine\=false\r\nFillSelectedColor\=ffffff\r\nBorderLineStyle\=0\r\nColors\=d4d0c8-d9dbc0-dee6b8\r\nHighlightLineStyle\=0\r\nNoBackground\=false\r\nCirculateLevelColors\=true\r\n
+pm.eclipse.editbox.provider.markup_default=Default
+pm.eclipse.editbox.provider.markup_enabled=true
+pm.eclipse.editbox.provider.markup_fileNames=*.*ml,*.jsp
+pm.eclipse.editbox.provider.python_Whitebox=\#COMMENT\r\n\#Wed May 20 00\:29\:30 BRT 2015\r\nHighlightOne\=true\r\nFillGradient\=false\r\nFillSelected\=true\r\nRoundBox\=true\r\nBorderColorType\=1\r\nName\=Whitebox\r\nExpandBox\=false\r\nBorderDrawLine\=false\r\nFillOnMove\=true\r\nAlpha\=0\r\nHighlightWidth\=1\r\nBorderWidth\=1\r\nHighlightColor\=000000\r\nBorderColor\=00bbbb\r\nFillKeyModifier\=Alt\r\nHighlightColorType\=3\r\nFillGradientColor\=e1e1d0\r\nBuilder\=Text\r\nHighlightDrawLine\=false\r\nFillSelectedColor\=e1e1d0\r\nBorderLineStyle\=1\r\nColors\=ffffff\r\nHighlightLineStyle\=0\r\nNoBackground\=false\r\nCirculateLevelColors\=false\r\n
+pm.eclipse.editbox.provider.python_default=Whitebox
+pm.eclipse.editbox.provider.python_enabled=true
+pm.eclipse.editbox.provider.text_Default=\#COMMENT\r\n\#Wed May 20 00\:29\:30 BRT 2015\r\nHighlightOne\=true\r\nFillGradient\=false\r\nFillSelected\=true\r\nRoundBox\=true\r\nBorderColorType\=1\r\nName\=Default\r\nExpandBox\=false\r\nBorderDrawLine\=false\r\nFillOnMove\=false\r\nAlpha\=0\r\nHighlightWidth\=1\r\nBorderWidth\=1\r\nHighlightColor\=000000\r\nBorderColor\=00bbbb\r\nFillKeyModifier\=Alt\r\nHighlightColorType\=2\r\nFillGradientColor\=null\r\nBuilder\=Text\r\nHighlightDrawLine\=false\r\nFillSelectedColor\=ffffc4\r\nBorderLineStyle\=0\r\nColors\=c4c7b1-d0dd9b-cdd8b9-e2e3ac-f2fabc\r\nHighlightLineStyle\=0\r\nNoBackground\=false\r\nCirculateLevelColors\=false\r\n
+pm.eclipse.editbox.provider.text_default=Default
+pm.eclipse.editbox.provider.text_enabled=true
+pm.eclipse.editbox.provider.text_fileNames=*.txt,*.*
