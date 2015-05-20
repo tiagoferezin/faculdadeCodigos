@@ -10,7 +10,7 @@ public class ConexaoFactory {
 		DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
 
 		retorno = DriverManager.getConnection(
-				"jdbc:oracle:thin:@localhost:1521:xe", "SYSTEM", "fbarbosa");
+				"jdbc:oracle:thin:@localhost:1521:xe", "tferezin", "152535");
 		System.out.println("CONEXÃO CRIADA COM SUCESSO");
 		return retorno;
 	}

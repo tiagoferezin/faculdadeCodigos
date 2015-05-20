@@ -1,0 +1,5 @@
+INDEX VERSION 1.127
+C:\Users\Tiago\git\faculdadeCodigos\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2848453628.index
+\Proj4-1sem2015\src
+C:\Users\Tiago\git\faculdadeCodigos\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\813153873.index
+\Proj4-1sem2015\src

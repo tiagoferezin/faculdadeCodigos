@@ -107,6 +107,8 @@ public class EmployeesDao implements ICrud {
 		Integer retorno = 0;
 		Employees employees = (Employees) objetoPersistir;
 
+		System.out.println("Executou inserir()");
+		
 		String sql = "INSERT INTO HR.EMPLOYEES ("
 				+ "COMMISSION_PCT, DEPARTMENT_ID, EMAIL, "
 				+ "FIRST_NAME, HIRE_DATE, "
@@ -136,14 +138,17 @@ public class EmployeesDao implements ICrud {
 		
 		stmt.setString(9, employees.getPhoneNumber());
 		stmt.setDouble(10, employees.getSalary());
+		
+		System.out.println("Comando SQL = " + sql);
 		retorno = stmt.executeUpdate();
+		System.out.println("retorno = " + retorno);
 		return retorno;
 	}
 
 	@Override
 	public Integer alterar(Object objetoPersistir) throws Exception {
 		Integer retorno = 0;
-
+System.out.println("Executou o alterar()");
 		Employees employees = (Employees) objetoPersistir;
 		String sql = "UPDATE HR.EMPLOYEES SET"
 				+ "COMMISSION_PCT = ?, DEPARTMENT_ID= ?, EMAIL= ?, "
@@ -151,6 +156,8 @@ public class EmployeesDao implements ICrud {
 				+ "JOB_ID= ?, LAST_NAME= ?, MANAGER_ID= ?, "
 				+ "PHONE_NUMBER= ?, SALARY= ? WHERE EMPLOYEE_ID =? ";
 
+		
+		
 		PreparedStatement stmt = conexao.prepareStatement(sql);
 		stmt.setDouble(1, employees.getCommissionPct());
 		stmt.setInt(2, employees.getDepartmentId());
@@ -165,7 +172,10 @@ public class EmployeesDao implements ICrud {
 		stmt.setString(10, employees.getPhoneNumber());
 		stmt.setDouble(11, employees.getSalary());
 
+		System.out.println("Comando SQL = " + sql);
+		
 		retorno = stmt.executeUpdate();
+		System.out.println("retorno = " + retorno);
 		return retorno;
 
 	}
