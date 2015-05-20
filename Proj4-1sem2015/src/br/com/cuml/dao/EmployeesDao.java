@@ -141,6 +141,7 @@ public class EmployeesDao implements ICrud {
 		
 		System.out.println("Comando SQL = " + sql);
 		retorno = stmt.executeUpdate();
+		
 		System.out.println("retorno = " + retorno);
 		return retorno;
 	}
