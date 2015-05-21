@@ -163,15 +163,15 @@ System.out.println("Executou o alterar()");
 		stmt.setDouble(1, employees.getCommissionPct());
 		stmt.setInt(2, employees.getDepartmentId());
 		stmt.setString(3, employees.getEmail());
-		stmt.setInt(4, employees.getEmployeeId());
-		stmt.setString(5, employees.getFirstName());
-		stmt.setTimestamp(6, (new Timestamp(employees.getHireDate()
+		stmt.setString(4, employees.getFirstName());
+		stmt.setTimestamp(5, (new Timestamp(employees.getHireDate()
 				.getTimeInMillis())));
-		stmt.setString(7, employees.getJobId());
-		stmt.setString(8, employees.getLastName());
-		stmt.setInt(9, employees.getManagerId());
-		stmt.setString(10, employees.getPhoneNumber());
-		stmt.setDouble(11, employees.getSalary());
+		stmt.setString(6, employees.getJobId());
+		stmt.setString(7, employees.getLastName());
+		stmt.setInt(8, employees.getManagerId());
+		stmt.setString(9, employees.getPhoneNumber());
+		stmt.setDouble(10, employees.getSalary());
+		stmt.setInt(11, employees.getEmployeeId());
 
 		System.out.println("Comando SQL = " + sql);
 		

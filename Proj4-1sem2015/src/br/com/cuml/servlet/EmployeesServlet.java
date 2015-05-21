@@ -167,8 +167,16 @@ public class EmployeesServlet extends HttpServlet {
 				// empregado.setDepartmentId(null);
 				throw new Exception("Informe o departamento.");
 			}
+
+			Integer id = Integer.parseInt(request.getParameter("employeeId"));
+
 			EmployeesDao dao = new EmployeesDao();
-			dao.inserir(empregado);
+			if ((id == null) || (id == 0) || (id.equals(0))) {
+				dao.inserir(empregado);
+			}else{
+				empregado.getEmployeeId();
+				dao.alterar(empregado);
+			}
 
 		} catch (Exception e) {
 			// TODO: handle exception
