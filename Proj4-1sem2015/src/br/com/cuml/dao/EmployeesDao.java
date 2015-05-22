@@ -151,7 +151,7 @@ public class EmployeesDao implements ICrud {
 		Integer retorno = 0;
 System.out.println("Executou o alterar()");
 		Employees employees = (Employees) objetoPersistir;
-		String sql = "UPDATE HR.EMPLOYEES SET"
+		String sql = "UPDATE HR.EMPLOYEES SET "
 				+ "COMMISSION_PCT = ?, DEPARTMENT_ID= ?, EMAIL= ?, "
 				+ " FIRST_NAME= ?, HIRE_DATE= ?, "
 				+ "JOB_ID= ?, LAST_NAME= ?, MANAGER_ID= ?, "

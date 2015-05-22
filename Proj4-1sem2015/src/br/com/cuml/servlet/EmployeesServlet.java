@@ -95,11 +95,11 @@ public class EmployeesServlet extends HttpServlet {
 
 		String msg = "Empregado gravado.";
 		try {
-			Employees empregado = new Employees();
-			empregado.setFirstName(request.getParameter("firstName"));
-			empregado.setLastName(request.getParameter("lastName"));
-			empregado.setEmail(request.getParameter("email"));
-			empregado.setJobId(request.getParameter("jobId"));
+			Employees employee = new Employees();
+			employee.setFirstName(request.getParameter("firstName"));
+			employee.setLastName(request.getParameter("lastName"));
+			employee.setEmail(request.getParameter("email"));
+			employee.setJobId(request.getParameter("jobId"));
 
 			// A data informada pelo usuário que é texto
 			String textoHireDate = request.getParameter("hireDate");
@@ -121,45 +121,45 @@ public class EmployeesServlet extends HttpServlet {
 			// Atribuindo (setando) o objeto Calendar
 			// no objeto empregado que será
 			// persistido (gravado)
-			empregado.setHireDate(calHireDate);
+			employee.setHireDate(calHireDate);
 
 			try {
 				// tentando converter o parametro de salario da requisição [FB]
 				String txtSalario = request.getParameter("salary");
-				empregado.setSalary(Double.parseDouble(txtSalario));
+				employee.setSalary(Double.parseDouble(txtSalario));
 
 			} catch (Exception e) {
 				// caso não consiga converter seta com 0 do tipo Double (0d)
 				// [FB]
-				empregado.setSalary(0d);
+				employee.setSalary(0d);
 			}
 
 			try {
 				// tentando converter o parametro de comissão da requisição [FB]
 				String txtCommission = request.getParameter("commissionPct");
-				empregado.setCommissionPct(Double.parseDouble(txtCommission));
+				employee.setCommissionPct(Double.parseDouble(txtCommission));
 
 			} catch (Exception e) {
 				// caso não consiga converter seta com 0 do tipo Double (0d)
 				// [FB]
-				empregado.setCommissionPct(0d);
+				employee.setCommissionPct(0d);
 			}
 
 			try {
 				// tentando converter o parametro de comissão da requisição [FB]
 				String txtManagerId = request.getParameter("managerId");
-				empregado.setManagerId(Integer.parseInt(txtManagerId));
+				employee.setManagerId(Integer.parseInt(txtManagerId));
 
 			} catch (Exception e) {
 				// caso não consiga converter seta com 0 do tipo Double (0d)
 				// [FB]
-				empregado.setManagerId(null);
+				employee.setManagerId(null);
 			}
 
 			try {
 				// tentando converter o parametro de comissão da requisição [FB]
 				String txtDepartmentId = request.getParameter("departmentId");
-				empregado.setDepartmentId(Integer.parseInt(txtDepartmentId));
+				employee.setDepartmentId(Integer.parseInt(txtDepartmentId));
 
 			} catch (Exception e) {
 				// caso não consiga converter seta com 0 do tipo Double (0d)
@@ -168,14 +168,15 @@ public class EmployeesServlet extends HttpServlet {
 				throw new Exception("Informe o departamento.");
 			}
 
-			Integer id = Integer.parseInt(request.getParameter("employeeId"));
+			String id = request.getParameter("employeeId");
 
 			EmployeesDao dao = new EmployeesDao();
-			if ((id == null) || (id == 0) || (id.equals(0))) {
-				dao.inserir(empregado);
-			}else{
-				empregado.getEmployeeId();
-				dao.alterar(empregado);
+			if ((id == null) || (id == "0") || (id == "")) {
+				dao.inserir(employee);
+			} else {
+				employee.setEmployeeId(Integer.parseInt(id));
+
+				dao.alterar(employee);
 			}
 
 		} catch (Exception e) {
