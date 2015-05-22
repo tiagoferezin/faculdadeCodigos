@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
+prefix="c" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Listagem de Empregados</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="./plugins/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="./plugins/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="./plugins/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+<style type="text/css">
+.acoes {
+  width:100%; background-color:#EFEFEF;
+  text-align: right;
+  padding:10px;
+}
+</style>
+</head>
+<body>
+<h1>
+Lista de employees
+</h1>
+<div class="acoes">
+	<a href="./employees?logica=novo"
+	   class="btn btn-primary"
+	>Novo empregado</a>
+</div>
+<h2>${msgErro }</h2>
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>Id.	</th>
+			<th>Nome completo</th>
+			<th>Admissão</th>
+			<th>Salário</th>
+			<th>Ações</th>
+		</tr>
+	</thead>
+	<tbody>
+		<c:forEach var="employee" items="${lista }">
+			<tr>
+				<td>${employee.employeeId }</td>
+				<td>${employee.firstName }&nbsp; 
+				${employee.lastName }</td>
+				<td>${employee.hireDate.time }
+				<td>${employee.salary }</td>
+				<td><a class="btn btn-default"
+				href=
+				"employees?logica=editar&id=${employee.employeeId }">
+				Editar</a></td>
+			</tr>
+		</c:forEach>
+	</tbody>
+</table>
+
+</body>
+</html>

@@ -35,7 +35,7 @@
 
 </head>
 <body>
-	<h1>Editar Employees</h1>
+	<h1>Editar Empregado</h1>
 
 	<form action="./employees?logica=salvar" method="post">
 
